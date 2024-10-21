@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.galeria{
+    max-width: 1000px;
+    background-color: bisque;
+    margin: 10px auto;
+    box-shadow: 2px 5px 5px black;
+}
+.galeria ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.galeria ul li{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.galeria ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria ul li img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+     
+ }
+
+
+ /*-------------caja de visualizacion de imagenes en detalle------------*/
+
+ #boxGaleria{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    position: fixed;
+    top: 0;
+    display: none;
+ }
+
+ 
+ .sangria{ /*Se deja un espacio para que los lados del marco no queden pegados*/
+    max-width: 500px;
+    margin:  0 auto;
+    padding: 5px;
+    /*border: 1px solid red;*/
+ }
+
+ #marco{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 0, 0);
+ }
+
+ #contenedor{
+    display: flex;
+    width: 1200%; /*1200% porque son 12 imagenes, cada imagen se muestren a un 100% en la parte visible del marco*/
+    height: 100%;
+    margin-left: 0;
+ }
+
+ #contenedor li{
+    width: 100%;
+    height: 100%;
+ }
+
+ #contenedor  li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ }
+
+ /* Botones de control de galeria*/
+ #cerrar{
+   width: 30px;
+   height: 30px;
+   margin: 0 auto;
+   cursor: pointer;
+}
+
+#cerrar img{
+   width: 100%;
+   height: 100%;
+}
+
+ .botones{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+ }
+
+ .botones img{
+    width: 100%;
+    height: 100%;
+ }
+
+ #controles{
+   display: flex;
+   max-width: 300px;
+   margin: 5px auto;
+   justify-content: space-around;
+ }
